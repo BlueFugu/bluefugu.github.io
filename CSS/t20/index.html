@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+.block{
+	width:400px;
+	height:200px;
+	background:linear-gradient(to right,red,navy);
+	color:white;
+	font-size:50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-bottom:40px;
+	margin-left:500px;
+	font-family:'Lobster', cursive;
+	transition:all 1s ease;
+}
+.anim1:hover{
+	box-shadow: 0 0 0 30px inset white;
+	
+}
+.anim2{
+	opacity:70%;
+}
+.anim2:hover{
+	opacity:1;
+	
+}
+.anim3:hover{
+transform:scale(1.1, 1.1);
+}
+.anim4:hover{	
+	border-radius:50px;
+}
+.anim5:hover{
+	transform:rotateZ(36000deg);
+	margin-bottom:100px;
+	margin-top:100px;
+}
+.anim6{
+	animation-name:spin;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+}
+@keyframes spin{
+	0%{
+		transform:rotateZ(20deg) scale(1,1);
+	}
+	100%{
+		transform:rotateX(360deg) scale(2,1);
+	}
+}
+</style>
+</head>
+<body>
+<div class="anim1 block">Giraffe 1</div>
+<div class="anim2 block">Giraffe 2</div>
+<div class="anim3 block">Giraffe 3</div>
+<div class="anim4 block">Giraffe 4</div>
+<div class="anim5 block">Giraffe 5</div>
+<div class="anim6 block">Giraffe 6</div>
+</body>
+</html>
