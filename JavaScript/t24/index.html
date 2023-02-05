@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Тема 24</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-xxl">
+		<div class="row">
+			<div class="sidebar col-3">
+				<h4 class="text-center">Фільтри</h4>
+
+				<div class="my-2">
+					<label class="form-label">Назва товару</label>
+					<input id="name" type="text" class="form-control">
+				</div>
+
+				<div class="my-2">
+					<label class="form-label">Виробник</label>
+					<input id="de" class="form-control" list="datalistOptions" placeholder="Наберіть для пошуку...">
+					<datalist id="datalistOptions">
+						<option value="Samsung">
+						<option value="Xiaomi">
+						<option value="Huawei">
+						<option value="Apple">
+					</datalist>
+				</div>
+
+				<div class="my-2">
+					<label class="form-label">Мінімальна ціна</label>
+					<input id="min" type="number" min="1000" class="form-control">
+				</div>
+
+				<div class="my-2">
+					<label class="form-label">Максимальна ціна</label>
+					<input id="max" type="number" min="3000" class="form-control">
+				</div>
+
+				<div class="my-2">
+					<label class="form-label">Сортувати за</label>
+					<select id="jar" class="form-select" aria-label="Default select example">
+						<option selected></option>
+						<option value="price">Ціна</option>
+						<option value="reviews">Відгуки</option>
+				  </select>
+				</div>
+
+				<div class="mt-5">
+					<button class="btn btn-primary" onclick="saveFilter()">Пошук</button>
+				</div>
+			</div>
+
+			<div class="main col-9">
+				<h4 class="text-center mb-3">Товари</h4>
+
+				<div id="cards" class="cards d-flex flex-wrap justify-content-around">
+					
+
+			
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="array.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
