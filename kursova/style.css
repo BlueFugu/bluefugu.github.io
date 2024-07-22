@@ -1,30 +1,221 @@
-.menu{
+body {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 1.25rem;
+    margin: 0;
+    background: #fbefff;
+    color: #442a5c;
+  }
+ 
+.upper{
+  text-decoration: none;
+  color: #442a5c;
+}
+
+
+
+
+  .but{
     width: 100vw;
-    height: 10vh;
-    background-color: rgb(246, 240, 183);
-    padding:5px;
+    height: 85vh;
+    position: fixed;
+    top: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
+  }
+  .cclick{
+    margin-bottom: 10px;
+    font-size:xx-large;
+  }
+  #cliker{
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px #442a5c;
+  }
+  .name4t{
+    font-size:small;
+  }
+
+
+
+  .menu{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(239, 215, 243);
+    z-index: 99;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    border: 1px solid rgb(158, 113, 158);
+}
+.menush{
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(239, 215, 243);
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(158, 113, 158);
 }
 .btn:hover:before{
-    color:#ffc107;
+    color:#cd07ff;
 }
-.filter{
-    width: 300px;
-    height: 600px;
-    border: 4px dotted #ffc107;
+#filter{
+    width: 280px;
+    height:max-content;
+    padding-bottom: 20px;
+    border: 4px solid #df79f9;
     position: fixed;
-    top: 100px;
+    top:20%;
     left:10px;
+    z-index: 999;
 }
-.things{
-   background-color: bisque;
-    min-height: 400vh;
-    width: 75vw;
+#things{
+   background-color: rgb(243, 196, 255);
+   min-height: 70vh;
+    width: 80vw;
     float: right;
     margin-right: 5px;
-    margin-top: 10px;
-
+    margin-top: 130px;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    position:static;
+    left:320px;  
 }
+.wishlist{
+  background-color: rgb(233, 181, 247);
+  min-height:85vh;
+   width: 100vw;
+   float: right;
+   margin-top: 120px;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   position:static;  
+}
+
+
+  input{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #e5ceea;
+    border: 2px solid #442a5c;
+    border-radius: 5px;
+  }
+
+.addbusket{
+  background-color: rgba(255, 255, 255, 0);
+  color: #442a5c;
+}
+ .textpage{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content:center;
+    align-items: center;
+  }
+  .profile{
+    width: 100%;
+    height: 85vh;
+    background-color: #e5bfee;
+  }
+  .prof_info{
+    border: 0px;
+    background-color: #d0aed8;
+    
+  }
+  .prof_ino{
+    border: 0px;
+    background-color: #d0aed8;
+    
+  }
+  .prof_inf{
+    border: 2px solid #442a5c;
+  }
+
+  .login{
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 300px;
+    border: 2px solid #442a5c;
+    background: #f5bfee;
+    display:table;
+    justify-content: space-evenly;
+  }
+
+.card{ 
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: max-content;
+  margin: 4px;
+}
+.imar{
+    width: 190px;
+    height: 190px;
+    align-self: center;
+    
+}
+
+
+
+
+
+
+  button {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .btn {
+    font-weight: 600;
+    color: #442a5c;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #e5bfee;
+    border: 2px solid #442a5c;
+    border-radius: 1px;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+  }
+  .btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #b597bb;
+    box-shadow: 0 0 0 2px #442a5c;
+    border-radius: 1px;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  
+  .btn:hover {
+    background: #e5bfee;
+    transform: translate(0, 0.25em);
+    border: 2px solid #442a5c;
+  }
+  .btn:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+  }
+  .btn:active {
+    background: #e5bfee;
+    transform: translate(0em, 0.75em);
+  }
+  .btn:active::before {
+    transform: translate3d(0, 0, -1em);
+  }
+
+ 
